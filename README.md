@@ -1,16 +1,42 @@
-# React + Vite
+# 🔍 GitHub User Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic React application designed to seamlessly interface with the public GitHub REST API. This project allows users to search for GitHub profiles, displaying key statistics, repositories, and user details in a clean, responsive interface. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Links
+* **Live Demo:** [Vercel Deployment](https://githubsearch-delta.vercel.app/#/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React, JavaScript (ES6+)
+* **Routing:** React Router (HashRouter)
+* **API:** GitHub REST API
+* **Deployment:** Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨  Features & Technical Highlights
+
+* **API Integration:** Robust fetching logic utilizing the GitHub API to retrieve dynamic user data and repository arrays.
+* **State Management:** Efficient handling of asynchronous operations, including loading states, error catching (e.g., "User not found"), and data rendering.
+* **Responsive UI:** Clean data presentation displaying avatar, bio, follower metrics, and repository links.
+* **Client-Side Routing:** Implementation of React Router for seamless navigation between the search interface and detailed profile views.
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+
+   git clone [https://github.com/ladakoicheva/GITHUB_SEARCH.git](https://github.com/ladakoicheva/GITHUB_SEARCH.git)
+
+2. Navigate to the project directory:
+
+  cd GITHUB_SEARCH
+
+
+
+3. Install dependencies:
+
+npm install
+
+4. Start the development server:
+
+npm start
