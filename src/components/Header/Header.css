@@ -1,0 +1,42 @@
+.header {
+
+  width: 100%;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(142, 119, 160, 0.5);
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: #FFFFFF;
+
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+
+}
+
+nav a:hover {
+  color: #22D3EE;
+
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+}
+
+h1 {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}

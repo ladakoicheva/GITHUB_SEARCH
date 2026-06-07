@@ -1,0 +1,132 @@
+.elems {
+  display: flex;
+  justify-content: center;
+  width: clamp(fit-content, 40%, 100%);
+  min-width: fit-content;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.elems input {
+
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+input:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.4);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+select {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 105, 180, 0.4);
+  border-radius: 8px;
+  padding: 10px 35px 10px 15px;
+  font-size: 0.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+
+}
+
+select:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.4);
+}
+
+
+
+.gridColumns {
+  width: 100vw;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(269px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  padding-left: 1%;
+  padding-right: 1%;
+
+
+}
+
+.gridColumns li {
+  width: fit-content;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #514b82;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg, #000 1deg 70deg, #0000 71deg 90deg),
+    radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l5 1s infinite;
+}
+
+@keyframes l5 {
+  to {
+    transform: rotate(.5turn)
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media(max-width:769px) {
+
+  /* .gridColumns li{
+          margin:0 auto;
+        
+
+
+        } .elems input, */
+  .gridColumns {
+    width: 100vw;
+    list-style: none;
+    display: grid;
+    padding-right:10px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 20px;
+    font-size: 10px;
+    box-sizing: border-box;
+  
+
+
+  }
+
+
+  select {
+
+    font-size: 10px;
+
+  }
+}

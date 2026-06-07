@@ -1,0 +1,39 @@
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.chart,canvas{
+  flex-grow: 0;
+  width: 50%;
+  margin-top: 2%;
+ 
+}
+
+
+
+
+@media (max-width:769px) {
+  
+ 
+  .chart ,canvas{
+    width: 90%;
+  }
+  .info {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+  }
+
+  .descr {
+    margin: 0 auto;
+  }
+
+
+
+}

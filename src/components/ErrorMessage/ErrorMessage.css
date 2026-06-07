@@ -1,0 +1,20 @@
+.error {
+
+  position: fixed;
+  top: 14px;
+  left: -400px;
+  width: 20%;
+  min-width: 260px;
+  background: red;
+  padding: 5px;
+  color: #000;
+  border-radius: 30px;
+  transition: all .3s;
+  z-index: 99;
+
+}
+
+
+.slide {
+  left: 20px;
+}

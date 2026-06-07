@@ -1,0 +1,11 @@
+.repo-item{
+  display:flex;
+  justify-content:space-between;
+  gap:5px;
+  margin-bottom: 5px;
+}
+
+.repo-item li{
+  list-style: none;
+  
+}
